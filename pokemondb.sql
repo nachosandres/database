@@ -59,7 +59,7 @@ CREATE TABLE `poke-ability` (
 	`IDpoke` SMALLINT UNSIGNED NOT NULL ,
 	`IDability` TINYINT UNSIGNED NOT NULL,
     `slot` char(1) NOT NULL,
-	PRIMARY KEY (`IDpoke`,`IDegg`),
+	PRIMARY KEY (`IDpoke`,`IDability`),
 	CONSTRAINT `fk_pokeabi_poke` FOREIGN KEY (`IDpoke`) REFERENCES `pokemon` (`IDpoke`),
 	CONSTRAINT `fk_pokeabi_abi` FOREIGN KEY (`IDability`) REFERENCES `abilities` (`IDability`)
 ) ENGINE=InnoDB;
@@ -190,6 +190,7 @@ INSERT INTO `abilities` VALUES (133, 'Weak Armor', 'Raises Speed and lowers Defe
 INSERT INTO `abilities` VALUES (135, 'Light Metal', 'Halves weight');
 
 
+
 INSERT INTO `poke-egg` VALUES (3,1);
 INSERT INTO `poke-egg` VALUES (3,7);
 INSERT INTO `poke-egg` VALUES (6,1);
@@ -212,3 +213,37 @@ INSERT INTO `poke-egg` VALUES (376,16);
 INSERT INTO `poke-egg` VALUES (635,14);
 
 
+UPDATE `abilities` SET IDability=97 WHERE IDability=92;
+INSERT INTO `poke-ability` VALUES (3,65,'1');
+INSERT INTO `poke-ability` VALUES (3,34,'3');
+INSERT INTO `poke-ability` VALUES (6,66,'1');
+INSERT INTO `poke-ability` VALUES (6,94,'3');
+INSERT INTO `poke-ability` VALUES (9,67,'1');
+INSERT INTO `poke-ability` VALUES (9,44,'3');
+INSERT INTO `poke-ability` VALUES (12,14,'1');
+INSERT INTO `poke-ability` VALUES (12,110,'3');
+INSERT INTO `poke-ability` VALUES (15,68,'1');
+INSERT INTO `poke-ability` VALUES (15,97,'3');
+INSERT INTO `poke-ability` VALUES (18,51,'1');
+INSERT INTO `poke-ability` VALUES (18,77,'2');
+INSERT INTO `poke-ability` VALUES (18,145,'3');
+INSERT INTO `poke-ability` VALUES (26,9,'1');
+INSERT INTO `poke-ability` VALUES (26,31,'3');
+INSERT INTO `poke-ability` VALUES (28,8,'1');
+INSERT INTO `poke-ability` VALUES (28,146,'3');
+INSERT INTO `poke-ability` VALUES (36,56,'1');
+INSERT INTO `poke-ability` VALUES (36,98,'2');
+INSERT INTO `poke-ability` VALUES (36,132,'3');
+INSERT INTO `poke-ability` VALUES (62,11,'1');
+INSERT INTO `poke-ability` VALUES (62,6,'2');
+INSERT INTO `poke-ability` VALUES (62,33,'3');
+INSERT INTO `poke-ability` VALUES (94,26,'1');
+INSERT INTO `poke-ability` VALUES (124,12,'1');
+INSERT INTO `poke-ability` VALUES (124,108,'2');
+INSERT INTO `poke-ability` VALUES (124,87,'3');
+INSERT INTO `poke-ability` VALUES (139,33,'1');
+INSERT INTO `poke-ability` VALUES (139,75,'2');
+INSERT INTO `poke-ability` VALUES (139,133,'3');
+INSERT INTO `poke-ability` VALUES (376,29,'1');
+INSERT INTO `poke-ability` VALUES (376,135,'3');
+INSERT INTO `poke-ability` VALUES (635,26,'1');

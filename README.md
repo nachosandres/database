@@ -49,4 +49,5 @@ ___
 #### Relaciones Pokémon-grupohuevo
 Añadidas relaciones entre Pokémon y los grupos huevo a los que pertenecen en la tabla *poke-egg*.
 
-
+#### Relaciones Pokémon-habilidades
+Añadidas relaciones entre Pokémon y las habilidades que tienen. Corregido ID de la habilidad Sniper, de 92 a 97.
