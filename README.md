@@ -54,3 +54,8 @@ Añadidas relaciones entre Pokémon y las habilidades que tienen. Corregido ID d
 
 #### Creadas tablas moves y learnsets
 Creada tabla *moves* que recogerá los movimientos existentes y *learnsets* que relaciona *moves* con *pokemon*, indicando además a qué nivel cada Pokémon aprende cada ataque.
+
+#### Creada tabla categorias
+Creada tabla *categories*, que contiene los valores 'Physical', 'Special' y 'Status'. Corregida tabla *moves* para indicar tipo y categoría, que aparecen como Foreign Key.
+
+

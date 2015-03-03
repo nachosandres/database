@@ -249,15 +249,24 @@ INSERT INTO `poke-ability` VALUES (376,135,'3');
 INSERT INTO `poke-ability` VALUES (635,26,'1');
 
 
+CREATE TABLE `categories` (
+  `IDcat` TINYINT UNSIGNED NOT NULL,
+  `category` char(8) NOT NULL,
+   PRIMARY KEY  (`IDcat`)
+) ENGINE=InnoDB;
 
 CREATE TABLE `moves` (
-  `IDmove` SMALLINT UNSIGNED NOT NULL ,
+  `IDmove` SMALLINT UNSIGNED NOT NULL,
   `movename` char(16) NOT NULL ,
+  `IDtype` TINYINT UNSIGNED NOT NULL,
+  `IDcat` TINYINT UNSIGNED NOT NULL,
   `power` TINYINT UNSIGNED NOT NULL,
   `accuracy` TINYINT UNSIGNED NOT NULL,
   `PP` TINYINT UNSIGNED NOT NULL,
   `effect` varchar(255) NOT NULL,
-  PRIMARY KEY  (`IDmove`)
+  PRIMARY KEY  (`IDmove`),
+  CONSTRAINT `fk_moves_type` FOREIGN KEY (`IDtype`) REFERENCES `type` (`IDtype`),
+  CONSTRAINT `fk_moves_cat` FOREIGN KEY (`IDcat`) REFERENCES `categories` (`IDcat`)
 ) ENGINE=InnoDB;
 
 CREATE TABLE `learnsets` (
@@ -268,3 +277,10 @@ CREATE TABLE `learnsets` (
 	CONSTRAINT `fk_learnset_poke` FOREIGN KEY (`IDpoke`) REFERENCES `pokemon` (`IDpoke`),
 	CONSTRAINT `fk_learnset_move` FOREIGN KEY (`IDmove`) REFERENCES `moves` (`IDmove`)
 ) ENGINE=InnoDB;
+
+
+INSERT INTO `categories` VALUES (1, 'Physical');
+INSERT INTO `categories` VALUES (2, 'Special');
+INSERT INTO `categories` VALUES (3, 'Status');
+
+
