@@ -58,4 +58,5 @@ Creada tabla *moves* que recogerá los movimientos existentes y *learnsets* que 
 #### Creada tabla categorias
 Creada tabla *categories*, que contiene los valores 'Physical', 'Special' y 'Status'. Corregida tabla *moves* para indicar tipo y categoría, que aparecen como Foreign Key.
 
-
+#### Primeros datos de moves y learnsets
+Añadidos a *moves* los movimientos que Omastar (139) aprende por nivel, salvo los de Status para simplificar. Relacionados a través de *learnsets*, así como los movimientos del anterior conjunto que aprende también Blastoise.

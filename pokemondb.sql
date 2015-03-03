@@ -284,3 +284,25 @@ INSERT INTO `categories` VALUES (2, 'Special');
 INSERT INTO `categories` VALUES (3, 'Status');
 
 
+INSERT INTO `moves` VALUES (56, 'Hydro Pump', 11, 2, 110, 80, 5, 'None');
+INSERT INTO `moves` VALUES (350, 'Rock Blast', 6, 1, 25, 90, 10, 'Hits 2-5 times');
+INSERT INTO `moves` VALUES (131, 'Spike Cannon', 1, 1, 20, 100, 15, 'Hits 2-5 times');
+INSERT INTO `moves` VALUES (246, 'Ancient Power', 6, 2, 60, 200, 5, 'May raise all stats');
+INSERT INTO `moves` VALUES (362, 'Brine', 11, 2, 65, 100, 15, 'Double damage against opponent whose HP is below 1/2');
+INSERT INTO `moves` VALUES (341, 'Mud Shot', 5, 2, 55, 95, 15, 'Lowers targets speed');
+INSERT INTO `moves` VALUES (205, 'Rollout', 6, 1, 30, 90, 20, 'Attacks for five turns, doubling damage unless interrupted');
+INSERT INTO `moves` VALUES (55, 'Water Gun', 11, 2, 40, 100, 25, 'None');
+INSERT INTO `moves` VALUES (44, 'Bite', 17, 1, 60, 100, 25, 'May cause the target to flinch');
+
+INSERT INTO `learnsets` VALUES (139, 56, 75);
+INSERT INTO `learnsets` VALUES (139, 350, 56);
+INSERT INTO `learnsets` VALUES (139, 131, 40);
+INSERT INTO `learnsets` VALUES (139, 246, 37);
+INSERT INTO `learnsets` VALUES (139, 362, 28);
+INSERT INTO `learnsets` VALUES (139, 341, 25);
+INSERT INTO `learnsets` VALUES (139, 205, 16);
+INSERT INTO `learnsets` VALUES (139, 55, 10);
+INSERT INTO `learnsets` VALUES (139, 44, 7);
+INSERT INTO `learnsets` VALUES (9, 56, 60);
+INSERT INTO `learnsets` VALUES (9, 44, 16);
+INSERT INTO `learnsets` VALUES (9, 55, 7);
