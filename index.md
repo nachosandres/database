@@ -39,4 +39,7 @@ Corrección de fallo original que no impedía hacer la tabla, pero conveniente p
 Se han añadido a las tablas pokemon y poke-type datos de Pokémon que permiten tener al menos un ejemplo de cada tipo.
 
 ### Tabla de grupos huevo llena
-Rellenada tabla egggroup con la lista de todos los grupos huevo existentes. 
+Rellenada tabla egggroup con la lista de todos los grupos huevo existentes.
+
+### Tabla de habilidades rellenada
+Rellenada tabla abilities con las habilidades de los Pokémon ya introducidos en esta DB.
