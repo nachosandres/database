@@ -26,4 +26,7 @@ Se crea una base de datos y se le añaden las primeras tablas: pokemon, type, eg
 ### Primeras tablas de relaciones N->N
 Se crean las tablas poke-type, poke-egg y poke-ability, que establecen relaciones entre pokemon y type, egggroup, abilities. Se añade también un nivel a los títulos de secciones en este documento.
 
+### Primeros datos: tipos y 3 pokemon
+Se rellena la tabla type y se introducen los primeros datos en la tabla pokemon.
+
 

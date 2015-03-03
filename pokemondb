@@ -66,3 +66,28 @@ CREATE TABLE `poke-ability` (
 
 
 
+
+INSERT INTO `pokemon` VALUES (3, 'Venusaur', 80, 82, 83, 100, 100, 80);
+INSERT INTO `pokemon` VALUES (6, 'Charizard', 78, 84, 78, 109, 85, 100);
+INSERT INTO `pokemon` VALUES (9, 'Blastoise', 79, 83, 100, 85, 105, 78);
+
+
+INSERT INTO `type` VALUES (1, 'Normal');
+INSERT INTO `type` VALUES (2, 'Fighting');
+INSERT INTO `type` VALUES (3, 'Flying');
+INSERT INTO `type` VALUES (4, 'Poison');
+INSERT INTO `type` VALUES (5, 'Ground');
+INSERT INTO `type` VALUES (6, 'Rock');
+INSERT INTO `type` VALUES (7, 'Bug');
+INSERT INTO `type` VALUES (8, 'Ghost');
+INSERT INTO `type` VALUES (9, 'Steel');
+INSERT INTO `type` VALUES (10, 'Fire');
+INSERT INTO `type` VALUES (11, 'Water');
+INSERT INTO `type` VALUES (12, 'Grass');
+INSERT INTO `type` VALUES (13, 'Electric');
+INSERT INTO `type` VALUES (14, 'Psychic');
+INSERT INTO `type` VALUES (15, 'Ice');
+INSERT INTO `type` VALUES (16, 'Dragon');
+INSERT INTO `type` VALUES (17, 'Dark');
+INSERT INTO `type` VALUES (18, 'Fairy');
+
