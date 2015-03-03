@@ -38,4 +38,5 @@ Corrección de fallo original que no impedía hacer la tabla, pero conveniente p
 ### Nuevos pokemon para cubrir todos los tipos
 Se han añadido a las tablas pokemon y poke-type datos de Pokémon que permiten tener al menos un ejemplo de cada tipo.
 
-
+### Tabla de grupos huevo llena
+Rellenada tabla egggroup con la lista de todos los grupos huevo existentes. 

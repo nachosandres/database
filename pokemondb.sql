@@ -136,3 +136,22 @@ INSERT INTO `poke-type` VALUES (376,9);
 INSERT INTO `poke-type` VALUES (376,14);
 INSERT INTO `poke-type` VALUES (635,16);
 INSERT INTO `poke-type` VALUES (635,17);
+
+
+
+INSERT INTO `egggroup` VALUES (1, 'Monster');
+INSERT INTO `egggroup` VALUES (2, 'Water 1');
+INSERT INTO `egggroup` VALUES (3, 'Bug');
+INSERT INTO `egggroup` VALUES (4, 'Flying');
+INSERT INTO `egggroup` VALUES (5, 'Field');
+INSERT INTO `egggroup` VALUES (6, 'Fairy');
+INSERT INTO `egggroup` VALUES (7, 'Grass');
+INSERT INTO `egggroup` VALUES (8, 'Human-Like');
+INSERT INTO `egggroup` VALUES (9, 'Water 3');
+INSERT INTO `egggroup` VALUES (10, 'Mineral');
+INSERT INTO `egggroup` VALUES (11, 'Amorphous');
+INSERT INTO `egggroup` VALUES (12, 'Water 2');
+INSERT INTO `egggroup` VALUES (13, 'Ditto');
+INSERT INTO `egggroup` VALUES (14, 'Dragon');
+INSERT INTO `egggroup` VALUES (15, 'Undiscovered');
+INSERT INTO `egggroup` VALUES (16, 'Genderless');
