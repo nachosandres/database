@@ -32,4 +32,7 @@ Se rellena la tabla type y se introducen los primeros datos en la tabla pokemon.
 ### Primeras relaciones pokemon-tipo
 Se añaden los valores correspondientes a los primeros 3 Pokémon utilizados en la tabla poke-type. Se introduce además en la tabla pokemon el atributo dualtype con ALTER TABLE, incluyendo sus valores con UPDATE.
 
+### Cambiado archivo pokemondb a pokemondb.sql
+Corrección de fallo original que no impedía hacer la tabla, pero conveniente para editar fuera de MySQL Workbench y poder ver resaltado.
+
 
