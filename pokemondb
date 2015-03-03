@@ -91,3 +91,14 @@ INSERT INTO `type` VALUES (16, 'Dragon');
 INSERT INTO `type` VALUES (17, 'Dark');
 INSERT INTO `type` VALUES (18, 'Fairy');
 
+
+ALTER TABLE `pokemon` ADD COLUMN `dualtype` BOOL NOT NULL;
+UPDATE `pokemon` SET dualtype=1 WHERE IDpoke=3;
+UPDATE `pokemon` SET dualtype=1 WHERE IDpoke=6;
+UPDATE `pokemon` SET dualtype=0 WHERE IDpoke=9;
+INSERT INTO `poke-type` VALUES (3,12);
+INSERT INTO `poke-type` VALUES (3,4);
+INSERT INTO `poke-type` VALUES (6,10);
+INSERT INTO `poke-type` VALUES (6,3);
+INSERT INTO `poke-type` VALUES (9,11);
+

@@ -29,4 +29,7 @@ Se crean las tablas poke-type, poke-egg y poke-ability, que establecen relacione
 ### Primeros datos: tipos y 3 pokemon
 Se rellena la tabla type y se introducen los primeros datos en la tabla pokemon.
 
+### Primeras relaciones pokemon-tipo
+Se añaden los valores correspondientes a los primeros 3 Pokémon utilizados en la tabla poke-type. Se introduce además en la tabla pokemon el atributo dualtype con ALTER TABLE, incluyendo sus valores con UPDATE.
+
 
