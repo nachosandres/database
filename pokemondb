@@ -36,3 +36,33 @@ CREATE TABLE `abilities` (
 
 
 
+
+CREATE TABLE `poke-type` (
+	`IDpoke` SMALLINT UNSIGNED NOT NULL ,
+	`IDtype` TINYINT UNSIGNED NOT NULL,
+	PRIMARY KEY (`IDpoke`,`IDtype`),
+	CONSTRAINT `fk_poketype_poke` FOREIGN KEY (`IDpoke`) REFERENCES `pokemon` (`IDpoke`),
+	CONSTRAINT `fk_poketype_type` FOREIGN KEY (`IDtype`) REFERENCES `type` (`IDtype`)
+) ENGINE=InnoDB;
+
+
+CREATE TABLE `poke-egg` (
+	`IDpoke` SMALLINT UNSIGNED NOT NULL ,
+	`IDegg` TINYINT UNSIGNED NOT NULL,
+	PRIMARY KEY (`IDpoke`,`IDegg`),
+	CONSTRAINT `fk_pokeegg_poke` FOREIGN KEY (`IDpoke`) REFERENCES `pokemon` (`IDpoke`),
+	CONSTRAINT `fk_pokeegg_egg` FOREIGN KEY (`IDegg`) REFERENCES `egggroup` (`IDegg`)
+) ENGINE=InnoDB;
+
+
+CREATE TABLE `poke-ability` (
+	`IDpoke` SMALLINT UNSIGNED NOT NULL ,
+	`IDability` TINYINT UNSIGNED NOT NULL,
+    `slot` char(1) NOT NULL,
+	PRIMARY KEY (`IDpoke`,`IDegg`),
+	CONSTRAINT `fk_pokeabi_poke` FOREIGN KEY (`IDpoke`) REFERENCES `pokemon` (`IDpoke`),
+	CONSTRAINT `fk_pokeabi_abi` FOREIGN KEY (`IDability`) REFERENCES `abilities` (`IDability`)
+) ENGINE=InnoDB;
+
+
+
