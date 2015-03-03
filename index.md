@@ -35,4 +35,7 @@ Se añaden los valores correspondientes a los primeros 3 Pokémon utilizados en 
 ### Cambiado archivo pokemondb a pokemondb.sql
 Corrección de fallo original que no impedía hacer la tabla, pero conveniente para editar fuera de MySQL Workbench y poder ver resaltado.
 
+### Nuevos pokemon para cubrir todos los tipos
+Se han añadido a las tablas pokemon y poke-type datos de Pokémon que permiten tener al menos un ejemplo de cada tipo.
+
 
