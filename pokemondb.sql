@@ -313,3 +313,28 @@ ALTER TABLE `type` ADD UNIQUE (`typename`);
 ALTER TABLE `abilities` ADD UNIQUE (`abilityname`);
 ALTER TABLE `categories` ADD UNIQUE (`category`);
 ALTER TABLE `moves` ADD UNIQUE (`movename`);
+
+DELIMITER //
+CREATE function stat_average(pokeno SMALLINT UNSIGNED) returns decimal(6,2)
+READS SQL DATA
+begin
+DECLARE statavg decimal(6,2);
+SELECT (HP+attack+defense+spattack+spdefense+speed)/6.0 into statavg
+from `pokemon`
+WHERE IDpoke=pokeno;
+RETURN statavg;
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE function base_stat_total(pokeno SMALLINT UNSIGNED) returns SMALLINT
+READS SQL DATA
+begin
+DECLARE bst SMALLINT;
+SELECT HP+attack+defense+spattack+spdefense+speed into bst
+from `pokemon`
+WHERE IDpoke=pokeno;
+RETURN bst;
+END //
+DELIMITER ;
+

@@ -63,3 +63,6 @@ Añadidos a *moves* los movimientos que Omastar (139) aprende por nivel, salvo l
 
 #### Constraint unique a nombres
 Añadida constraint UNIQUE a todos los nombres que aparecen en las tablas (Pokémon, tipo, grupo huevo, habilidad, movimiento, categoría).
+
+#### Funciones base stat total y average stat
+Añadidas funciones que calculan el base stat total (HP+attack+defense+spattack+spdefense+speed) y la media de los stats.
