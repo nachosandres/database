@@ -60,3 +60,6 @@ Creada tabla *categories*, que contiene los valores 'Physical', 'Special' y 'Sta
 
 #### Primeros datos de moves y learnsets
 Añadidos a *moves* los movimientos que Omastar (139) aprende por nivel, salvo los de Status para simplificar. Relacionados a través de *learnsets*, así como los movimientos del anterior conjunto que aprende también Blastoise.
+
+#### Constraint unique a nombres
+Añadida constraint UNIQUE a todos los nombres que aparecen en las tablas (Pokémon, tipo, grupo huevo, habilidad, movimiento, categoría).

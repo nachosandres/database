@@ -306,3 +306,10 @@ INSERT INTO `learnsets` VALUES (139, 44, 7);
 INSERT INTO `learnsets` VALUES (9, 56, 60);
 INSERT INTO `learnsets` VALUES (9, 44, 16);
 INSERT INTO `learnsets` VALUES (9, 55, 7);
+
+ALTER TABLE `pokemon` ADD UNIQUE (`pokename`);
+ALTER TABLE `egggroup` ADD UNIQUE (`eggname`);
+ALTER TABLE `type` ADD UNIQUE (`typename`);
+ALTER TABLE `abilities` ADD UNIQUE (`abilityname`);
+ALTER TABLE `categories` ADD UNIQUE (`category`);
+ALTER TABLE `moves` ADD UNIQUE (`movename`);
