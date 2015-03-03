@@ -1,0 +1,38 @@
+CREATE SCHEMA pokemon;
+use pokemon;
+
+CREATE TABLE `pokemon` (
+  `IDpoke` SMALLINT UNSIGNED NOT NULL ,
+  `pokename` char(12) NOT NULL ,
+  `HP` TINYINT UNSIGNED NOT NULL,
+  `attack` TINYINT UNSIGNED NOT NULL,
+  `defense` TINYINT UNSIGNED NOT NULL,
+  `spattack` TINYINT UNSIGNED NOT NULL,
+  `spdefense` TINYINT UNSIGNED NOT NULL,
+  `speed` TINYINT UNSIGNED NOT NULL,
+  PRIMARY KEY  (`IDpoke`)
+) ENGINE=InnoDB;
+
+
+CREATE TABLE `egggroup` (
+  `IDegg` TINYINT UNSIGNED NOT NULL ,
+  `eggname` char(12) NOT NULL ,
+  PRIMARY KEY  (`IDegg`)
+) ENGINE=InnoDB;
+
+CREATE TABLE `type` (
+	`IDtype` TINYINT UNSIGNED NOT NULL,
+	`typename` char(12) NOT NULL,
+	PRIMARY KEY (`IDtype`)
+) ENGINE=InnoDB;
+
+CREATE TABLE `abilities` (
+	`IDability` TINYINT UNSIGNED NOT NULL,
+	`abilityname` char(14) NOT NULL,
+	`abilitydescrip` varchar(255) NOT NULL,
+	PRIMARY KEY (`IDability`)
+) ENGINE=InnoDB;
+
+
+
+
