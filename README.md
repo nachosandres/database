@@ -51,3 +51,6 @@ Añadidas relaciones entre Pokémon y los grupos huevo a los que pertenecen en l
 
 #### Relaciones Pokémon-habilidades
 Añadidas relaciones entre Pokémon y las habilidades que tienen. Corregido ID de la habilidad Sniper, de 92 a 97.
+
+#### Creadas tablas moves y learnsets
+Creada tabla *moves* que recogerá los movimientos existentes y *learnsets* que relaciona *moves* con *pokemon*, indicando además a qué nivel cada Pokémon aprende cada ataque.

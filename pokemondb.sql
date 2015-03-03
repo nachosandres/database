@@ -247,3 +247,24 @@ INSERT INTO `poke-ability` VALUES (139,133,'3');
 INSERT INTO `poke-ability` VALUES (376,29,'1');
 INSERT INTO `poke-ability` VALUES (376,135,'3');
 INSERT INTO `poke-ability` VALUES (635,26,'1');
+
+
+
+CREATE TABLE `moves` (
+  `IDmove` SMALLINT UNSIGNED NOT NULL ,
+  `movename` char(16) NOT NULL ,
+  `power` TINYINT UNSIGNED NOT NULL,
+  `accuracy` TINYINT UNSIGNED NOT NULL,
+  `PP` TINYINT UNSIGNED NOT NULL,
+  `effect` varchar(255) NOT NULL,
+  PRIMARY KEY  (`IDmove`)
+) ENGINE=InnoDB;
+
+CREATE TABLE `learnsets` (
+	`IDpoke` SMALLINT UNSIGNED NOT NULL,
+	`IDmove` SMALLINT UNSIGNED NOT NULL,
+    `level` TINYINT UNSIGNED NOT NULL,
+	PRIMARY KEY (`IDpoke`,`IDmove`),
+	CONSTRAINT `fk_learnset_poke` FOREIGN KEY (`IDpoke`) REFERENCES `pokemon` (`IDpoke`),
+	CONSTRAINT `fk_learnset_move` FOREIGN KEY (`IDmove`) REFERENCES `moves` (`IDmove`)
+) ENGINE=InnoDB;
