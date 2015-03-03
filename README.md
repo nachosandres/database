@@ -37,9 +37,16 @@ Rellenada tabla *egggroup* con la lista de todos los grupos huevo existentes.
 Rellenada tabla *abilities* con las habilidades de los Pokémon ya introducidos en esta DB.
 
 ___
+
 #### index.md transferido a README.md
 La página en Github estaba creada como de usuario. Se pasa a una de proyecto, que al crearse permite cargar el contenido del README.md. Por tanto, el contenido del index.md que mostraba un simple texto en Markdown en la página anterior se traslada aquí.
 
 #### README.md adaptado a pagina
 Se han realizado cambios estéticos en README.md en preparación para mostrarlo en la página, como reajustar los niveles de títulos o poner en cursiva nombres de tablas.
+
 ___
+
+#### Relaciones Pokémon-grupohuevo
+Añadidas relaciones entre Pokémon y los grupos huevo a los que pertenecen en la tabla *poke-egg*.
+
+

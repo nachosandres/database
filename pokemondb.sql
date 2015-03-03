@@ -188,3 +188,27 @@ INSERT INTO `abilities` VALUES (132, 'Friend Guard', 'Decreases damage inflicted
 INSERT INTO `abilities` VALUES (87, 'Dry Skin', 'Recovers HP in rain, loses HP under intense sunlight');
 INSERT INTO `abilities` VALUES (133, 'Weak Armor', 'Raises Speed and lowers Defense upon being hit');
 INSERT INTO `abilities` VALUES (135, 'Light Metal', 'Halves weight');
+
+
+INSERT INTO `poke-egg` VALUES (3,1);
+INSERT INTO `poke-egg` VALUES (3,7);
+INSERT INTO `poke-egg` VALUES (6,1);
+INSERT INTO `poke-egg` VALUES (6,14);
+INSERT INTO `poke-egg` VALUES (9,1);
+INSERT INTO `poke-egg` VALUES (9,2);
+INSERT INTO `poke-egg` VALUES (12,3);
+INSERT INTO `poke-egg` VALUES (15,3);
+INSERT INTO `poke-egg` VALUES (18,4);
+INSERT INTO `poke-egg` VALUES (26,5);
+INSERT INTO `poke-egg` VALUES (26,6);
+INSERT INTO `poke-egg` VALUES (28,5);
+INSERT INTO `poke-egg` VALUES (36,6);
+INSERT INTO `poke-egg` VALUES (62,2);
+INSERT INTO `poke-egg` VALUES (94,11);
+INSERT INTO `poke-egg` VALUES (124,8);
+INSERT INTO `poke-egg` VALUES (139,2);
+INSERT INTO `poke-egg` VALUES (139,9);
+INSERT INTO `poke-egg` VALUES (376,16);
+INSERT INTO `poke-egg` VALUES (635,14);
+
+
