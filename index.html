@@ -1,0 +1,178 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Base de datos de Pokémon en SQL</title>
+  <meta name="description" content="Seguimiento del proyecto">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Base de datos de Pokémon en SQL</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Seguimiento del proyecto</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/nachosandres/database/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/nachosandres/database/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/nachosandres/database" class="code">View Base de datos de Pokémon en SQL on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h2>
+<a id="creación-de-la-página" class="anchor" href="#creaci%C3%B3n-de-la-p%C3%A1gina" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creación de la página</h2>
+
+<h4>
+<a id="commit-inicial" class="anchor" href="#commit-inicial" aria-hidden="true"><span class="octicon octicon-link"></span></a>Commit inicial</h4>
+
+<p>Se creó repositorio, con archivos index.html y README.md</p>
+
+<h4>
+<a id="cambio-de-hmtl-a-md" class="anchor" href="#cambio-de-hmtl-a-md" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cambio de hmtl a md</h4>
+
+<p>Se cambia index.html a index.md, comprobando que aparece el texto en la página.</p>
+
+<h4>
+<a id="comprobando-que-se-ve-estilo-markdown" class="anchor" href="#comprobando-que-se-ve-estilo-markdown" aria-hidden="true"><span class="octicon octicon-link"></span></a>Comprobando que se ve estilo Markdown</h4>
+
+<p>Se sube al repositorio remoto el contenido anterior de este archivo, comprobándose que se muestran correctamente funciones de Markdown como los títulos.</p>
+
+<h2>
+<a id="creación-de-la-base-de-datos" class="anchor" href="#creaci%C3%B3n-de-la-base-de-datos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creación de la base de datos</h2>
+
+<h4>
+<a id="db-y-primeras-tablas" class="anchor" href="#db-y-primeras-tablas" aria-hidden="true"><span class="octicon octicon-link"></span></a>DB y primeras tablas</h4>
+
+<p>Se crea una base de datos y se le añaden las primeras tablas: <em>pokemon</em>, <em>type</em>, <em>egggroup</em>, <em>abilities</em>.</p>
+
+<h4>
+<a id="primeras-tablas-de-relaciones-n-n" class="anchor" href="#primeras-tablas-de-relaciones-n-n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Primeras tablas de relaciones N-&gt;N</h4>
+
+<p>Se crean las tablas <em>poke-type</em>, <em>poke-egg</em> y <em>poke-ability</em>, que establecen relaciones entre <em>pokemon</em> y <em>type</em>, <em>egggroup</em> y <em>abilities</em>. Se añade también un nivel a los títulos de secciones en este documento.</p>
+
+<h4>
+<a id="primeros-datos-tipos-y-3-pokémon" class="anchor" href="#primeros-datos-tipos-y-3-pok%C3%A9mon" aria-hidden="true"><span class="octicon octicon-link"></span></a>Primeros datos: tipos y 3 Pokémon</h4>
+
+<p>Se rellena la tabla <em>type</em> y se introducen los primeros datos en la tabla <em>pokemon</em>.</p>
+
+<h4>
+<a id="primeras-relaciones-pokémon-tipo" class="anchor" href="#primeras-relaciones-pok%C3%A9mon-tipo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Primeras relaciones Pokémon-tipo</h4>
+
+<p>Se añaden los valores correspondientes a los primeros 3 Pokémon utilizados en la tabla <em>poke-type</em>. Se introduce además en la tabla <em>pokemon</em> el atributo dualtype con ALTER TABLE, incluyendo sus valores con UPDATE.</p>
+
+<h4>
+<a id="cambiado-archivo-pokemondb-a-pokemondbsql" class="anchor" href="#cambiado-archivo-pokemondb-a-pokemondbsql" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cambiado archivo pokemondb a pokemondb.sql</h4>
+
+<p>Corrección de fallo original que no impedía hacer la tabla, pero conveniente para editar fuera de MySQL Workbench y poder ver resaltado.</p>
+
+<h4>
+<a id="nuevos-pokémon-para-cubrir-todos-los-tipos" class="anchor" href="#nuevos-pok%C3%A9mon-para-cubrir-todos-los-tipos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nuevos Pokémon para cubrir todos los tipos</h4>
+
+<p>Se han añadido a las tablas <em>pokemon</em> y <em>poke-type</em> datos de Pokémon que permiten tener al menos un ejemplo de cada tipo.</p>
+
+<h4>
+<a id="tabla-de-grupos-huevo-llena" class="anchor" href="#tabla-de-grupos-huevo-llena" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tabla de grupos huevo llena</h4>
+
+<p>Rellenada tabla <em>egggroup</em> con la lista de todos los grupos huevo existentes.</p>
+
+<h4>
+<a id="tabla-de-habilidades-rellenada" class="anchor" href="#tabla-de-habilidades-rellenada" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tabla de habilidades rellenada</h4>
+
+<p>Rellenada tabla <em>abilities</em> con las habilidades de los Pokémon ya introducidos en esta DB.</p>
+
+<hr>
+
+<h4>
+<a id="indexmd-transferido-a-readmemd" class="anchor" href="#indexmd-transferido-a-readmemd" aria-hidden="true"><span class="octicon octicon-link"></span></a>index.md transferido a README.md</h4>
+
+<p>La página en Github estaba creada como de usuario. Se pasa a una de proyecto, que al crearse permite cargar el contenido del README.md. Por tanto, el contenido del index.md que mostraba un simple texto en Markdown en la página anterior se traslada aquí.</p>
+
+<h4>
+<a id="readmemd-adaptado-a-pagina" class="anchor" href="#readmemd-adaptado-a-pagina" aria-hidden="true"><span class="octicon octicon-link"></span></a>README.md adaptado a pagina</h4>
+
+<p>Se han realizado cambios estéticos en README.md en preparación para mostrarlo en la página, como reajustar los niveles de títulos o poner en cursiva nombres de tablas.</p>
+
+<hr>
+
+<h4>
+<a id="relaciones-pokémon-grupohuevo" class="anchor" href="#relaciones-pok%C3%A9mon-grupohuevo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Relaciones Pokémon-grupohuevo</h4>
+
+<p>Añadidas relaciones entre Pokémon y los grupos huevo a los que pertenecen en la tabla <em>poke-egg</em>.</p>
+
+<h4>
+<a id="relaciones-pokémon-habilidades" class="anchor" href="#relaciones-pok%C3%A9mon-habilidades" aria-hidden="true"><span class="octicon octicon-link"></span></a>Relaciones Pokémon-habilidades</h4>
+
+<p>Añadidas relaciones entre Pokémon y las habilidades que tienen. Corregido ID de la habilidad Sniper, de 92 a 97.</p>
+
+<h4>
+<a id="creadas-tablas-moves-y-learnsets" class="anchor" href="#creadas-tablas-moves-y-learnsets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creadas tablas moves y learnsets</h4>
+
+<p>Creada tabla <em>moves</em> que recogerá los movimientos existentes y <em>learnsets</em> que relaciona <em>moves</em> con <em>pokemon</em>, indicando además a qué nivel cada Pokémon aprende cada ataque.</p>
+
+<h4>
+<a id="creada-tabla-categorias" class="anchor" href="#creada-tabla-categorias" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creada tabla categorias</h4>
+
+<p>Creada tabla <em>categories</em>, que contiene los valores 'Physical', 'Special' y 'Status'. Corregida tabla <em>moves</em> para indicar tipo y categoría, que aparecen como Foreign Key.</p>
+
+<h4>
+<a id="primeros-datos-de-moves-y-learnsets" class="anchor" href="#primeros-datos-de-moves-y-learnsets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Primeros datos de moves y learnsets</h4>
+
+<p>Añadidos a <em>moves</em> los movimientos que Omastar (139) aprende por nivel, salvo los de Status para simplificar. Relacionados a través de <em>learnsets</em>, así como los movimientos del anterior conjunto que aprende también Blastoise.</p>
+
+<h4>
+<a id="constraint-unique-a-nombres" class="anchor" href="#constraint-unique-a-nombres" aria-hidden="true"><span class="octicon octicon-link"></span></a>Constraint unique a nombres</h4>
+
+<p>Añadida constraint UNIQUE a todos los nombres que aparecen en las tablas (Pokémon, tipo, grupo huevo, habilidad, movimiento, categoría).</p>
+
+<h4>
+<a id="funciones-base-stat-total-y-average-stat" class="anchor" href="#funciones-base-stat-total-y-average-stat" aria-hidden="true"><span class="octicon octicon-link"></span></a>Funciones base stat total y average stat</h4>
+
+<p>Añadidas funciones que calculan el base stat total (HP+attack+defense+spattack+spdefense+speed) y la media de los stats.</p>
+
+<h2>
+<a id="redacción-del-informe" class="anchor" href="#redacci%C3%B3n-del-informe" aria-hidden="true"><span class="octicon octicon-link"></span></a>Redacción del informe</h2>
+
+<h4>
+<a id="hecho-informe" class="anchor" href="#hecho-informe" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hecho informe</h4>
+
+<p>Informe (tex y pdf) con imágenes incluido, de golpe por ser corto (el texto ocupa realmente 1 página) y no haberse necesitado revisiones. Las imágenes, incluidas en el informe, muestran diagrama EER de la base de datos y dos consultas de ejemplo.</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/nachosandres" class="avatar"><img src="https://avatars3.githubusercontent.com/u/10943854?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/nachosandres">nachosandres</a> maintains <a href="https://github.com/nachosandres/database">Base de datos de Pokémon en SQL</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/nachosandres/database/tarball/master" class="tar">tar</a><a href="https://github.com/nachosandres/database/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
