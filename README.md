@@ -66,3 +66,8 @@ Añadida constraint UNIQUE a todos los nombres que aparecen en las tablas (Poké
 
 #### Funciones base stat total y average stat
 Añadidas funciones que calculan el base stat total (HP+attack+defense+spattack+spdefense+speed) y la media de los stats.
+
+## Redacción del informe
+
+#### Hecho informe
+Informe (tex y pdf) con imágenes incluido, de golpe por ser corto (el texto ocupa realmente 1 página) y no haberse necesitado revisiones. Las imágenes, incluidas en el informe, muestran diagrama EER de la base de datos y dos consultas de ejemplo.
